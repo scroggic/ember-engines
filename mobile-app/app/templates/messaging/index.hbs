@@ -1,0 +1,10 @@
+<ul class="thread-list">
+  {{#each model.threads as |thread|}}
+    <li class="thread-summary">
+      {{#link-to "messaging.thread" thread}}
+        <h4>{{thread.from}}</h4>
+        <p>{{thread.excerpt}}</p>
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>

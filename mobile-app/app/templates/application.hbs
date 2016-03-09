@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1 class="title">Mobile App</h1>
 
-{{outlet}}
+<nav class="main-nav">
+  {{#link-to "messaging"}}
+    Your Messages
+  {{/link-to}}
+</nav>
+
+<div class="main-content">
+  {{outlet}}
+</div>
