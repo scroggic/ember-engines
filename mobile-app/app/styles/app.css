@@ -112,3 +112,21 @@ a {
 .message-item .time {
   color: rgba(48, 63, 159, 0.4);
 }
+
+/* SEARCH BAR */
+
+.search-bar {
+  padding: 0.5rem 1rem;
+  background: #c5cae9;
+}
+
+.search-bar textarea {
+  display: block;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
