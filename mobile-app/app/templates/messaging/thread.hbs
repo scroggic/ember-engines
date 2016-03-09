@@ -1,8 +1,5 @@
 <ul class="message-thread">
-  <li class="message-item">
-    <p class="from">{{model.from}}</p>
-    {{model.excerpt}}
-  </li>
+  {{messaging/message-item model=model}}
 </ul>
 
 {{outlet}}
