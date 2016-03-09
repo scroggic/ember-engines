@@ -106,5 +106,9 @@ a {
   bottom: 100%;
   font-size: 0.8rem;
   left: 0;
-  color: #3f51b5;
+  color: #303f9f;
+}
+
+.message-item .time {
+  color: rgba(48, 63, 159, 0.4);
 }

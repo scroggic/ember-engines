@@ -20,7 +20,7 @@ export default Ember.Service.extend({
 
     this.setProperties({
       clock: `${h}:${m}:${s}`,
-      _timer: run.later(this, '_tick', 500)
+      _timer: Ember.testing || run.later(this, '_tick', 500)
     });
   },
 
