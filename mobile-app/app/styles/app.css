@@ -37,6 +37,13 @@ a {
   background: #3f51b5;
 }
 
+.clock {
+  color: white;
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+}
+
 /* MESSAGING */
 
 .back-link {
