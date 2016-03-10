@@ -17,7 +17,7 @@ Throughout this exercise we will cover a lot of topics, including:
 To get started with the training, simply clone down this repository:
 
 ```bash
-git clone git@github.com:trentmwillis/engine-training.git
+git clone https://github.com/trentmwillis/engine-training.git
 ```
 
 Next, switch into the `mobile-app` directory within the repo, install dependencies, and fire up the Ember app:
