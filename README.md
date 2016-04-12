@@ -39,6 +39,8 @@ git fetch
 git checkout step-<#>
 ```
 
+_Note: the entire tutorial takes place in the `messaging` route of this dummy application, so be sure you're looking at the `/messaging` url when you're working through it._
+
 ## Step 0: Identifying Separation Points
 
 Before diving into the code, let's have a brief chat about how to identify areas of an application that are candidates for use as an Engine.
