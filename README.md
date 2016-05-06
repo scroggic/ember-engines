@@ -146,7 +146,7 @@ This error is pretty explicit, since your addon now has templates in the addon d
 
 Start the server again and you should build successfully!
 
-But, notice, the `search-bar` doesn't show up! This is becase we're running the `mobile-app` application, which means that when it tries to use that component it is looking for `mobile-app/components/search-bar`, but out component is now living at `messaging/components/search-bar`! So how do we resolve this?
+But, notice, the `search-bar` doesn't show up! This is becase we're running the `mobile-app` application, which means that when it tries to use that component it is looking for `mobile-app/components/search-bar`, but our component is now living at `messaging/components/search-bar`! So how do we resolve this?
 
 The simple solution is to re-export the component from the `app` directory of our addon. So add the following:
 
@@ -191,7 +191,7 @@ module.exports = {
 };
 ```
 
-This is super helpful for locally linked projects and will save you the headache of constantly starting and stopping your server. But. be sure to remove this function for any addons you will be shipping to other consumers!
+This is super helpful for locally linked projects and will save you the headache of constantly starting and stopping your server. But be sure to remove this function for any addons you will be shipping to other consumers!
 
 ## Step 2: Migrating Existing Code To An Addon
 
@@ -516,7 +516,7 @@ We just deleted some tests which brings up a good question: _how do we do tests 
 
 Testing an Engine is (as to be expected) basically like testing an addon crossed with an application. I'm going to assume you know how to test an application and will instead focus on the addon portion of that statement.
 
-Addon's are tested with a "dummy" application. This application can mock out an environment and inputs for the addon to use in order to verify it's behavior in a real context. The setup is relatively straightforward, inside the `tests` directory for the addon there will be a `dummy` directory that has a structure just like an Ember application (with some things elided). From there you can use the addon and test it just like you would in a normal application.
+Addon's are tested with a "dummy" application. This application can mock out an environment and inputs for the addon to use in order to verify its behavior in a real context. The setup is relatively straightforward: inside the `tests` directory for the addon there will be a `dummy` directory that has a structure just like an Ember application (with some things elided). From there you can use the addon and test it just like you would in a normal application.
 
 Similarly, Engines are tested by mounting them into a dummy application and then testing them as you would a normal application. Then, obviously, any unit and integration tests will work as normal (since they are isolated to begin with). It's worth noting that any dependencies your engine has will need to be fulfilled in some capacity by the dummy app.
 
