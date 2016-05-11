@@ -270,18 +270,16 @@ Do the above for all the route templates and then you should have the applicatio
 
 ## Step 3: Introducing Engines
 
-To start working with engines we need to install the [ember-engines](git@github.com:dgeb/ember-engines.git) addon in both the application and the addon. Normally, this is as simple as running:
+To start working with engines we need to install the [ember-engines](git@github.com:dgeb/ember-engines.git) addon in both the application and the addon. To do this, you can usually simply run:
 
 ```bash
-ember install ember-enginers
+ember install ember-engines
 ```
 
-However, there is still one big feature that hasn't made its way into `ember-engines` quite yet: external linking (more on that later). So, for the time being we will install `ember-engines` from a branch.
-
-In the `package.json` for `mobile-app` and `messaging`, include the following under `dependencies`:
+However, for our purposes it is recommended to manually update the `package.json` for `mobile-app` and `messaging` (so that you understand what is going on). Include the following under `dependencies`:
 
 ```json
-"ember-engines": "trentmwillis/ember-engines#links"
+"ember-engines": "^0.2.2"
 ```
 
 And then run `npm install` again. Serve the app to make sure everything is green before continuing on.
